@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untukmu...</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <!-- Floating hearts will be injected via JS -->
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="screen active">
+        <div class="loading-container">
+            <div class="loading-heart"></div>
+            <p>Memuat Kenangan...</p>
+            <div class="progress-bar">
+                <div id="loadingProgress" class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 1: Input Name -->
+    <div id="screen1" class="screen">
+        <div class="glass-card">
+            <h1>Hai...</h1>
+            <p>Boleh ketik namamu di bawah?</p>
+            <input type="text" id="nameInput" placeholder="Namamu..." autocomplete="off">
+            <button id="startBtn">Mulai</button>
+        </div>
+    </div>
+
+    <!-- Screen 2: Romantic Message -->
+    <div id="screen2" class="screen">
+        <div class="photo-container" id="photoContainer">
+            <img id="storyImage" class="story-media" src="" alt="Kenangan" style="display: none;">
+            <video id="storyVideo" class="story-media" src="" autoplay loop muted playsinline style="display: none;"></video>
+        </div>
+        <div class="message-container">
+            <p id="text1" class="hidden-text">Halo <span id="displayName"></span> cantik...</p>
+            <p id="text2" class="hidden-text">Menatap jalan yang sudah kita lalui bersama itu rasanya seperti melihat sebuah keajaiban kecil yang nyata.</p>
+            <p id="text3" class="hidden-text">Semua dimulai pada 19 November 2024 lalu. Di tengah ramainya suasana Mixue Wonogiri, saat kita datang ke tempat wisuda...</p>
+            <p id="text4" class="hidden-text">Ada satu rasa yang tak pernah bisa aku lupakan. Rasa gugup, bahagia, dan keyakinan bahwa kamu adalah seseorang yang ingin aku perjuangkan.</p>
+            <p id="text5" class="hidden-text">Siapa sangka, dari es krim yang mencair hari itu, kita telah menenun cerita yang luar biasa hingga hari ini.</p>
+            <p id="text6" class="hidden-text">575 hari sudah kita lewati bersama. Angka itu bukan sekadar hitungan hari...</p>
+            <p id="text7" class="hidden-text">Tapi adalah bukti dari air mata, tawa, dan pelukan yang menenangkan setelah badai.</p>
+            <p id="text8" class="hidden-text">Perjalanan ini sama sekali tidak mudah. Ada hari-hari di mana ego kita sama-sama tinggi, keras kepala yang saling berbenturan...</p>
+            <p id="text9" class="hidden-text">Kesalahpahaman yang menguras emosi, dan kejenuhan yang sempat menyapa.</p>
+            <p id="text10" class="hidden-text">Seringkali kita merasa lelah, tapi hebatnya, kita tidak pernah memilih untuk menyerah.</p>
+            <p id="text11" class="hidden-text">Kita belajar menurunkan ego, saling mengalah, dan mengingat kembali alasan mengapa kita memulainya di Mixue Wonogiri waktu itu.</p>
+            <p id="text12" class="hidden-text">Maafkan aku ya, untuk semua sikap keras kepalaku, ego yang kadang menyakiti hatimu, dan air mata yang tanpa sengaja aku buat menetes.</p>
+            <p id="text13" class="hidden-text">Tapi sungguh, dari lubuk hatiku yang paling dalam, tidak ada niat sedikit pun untuk membuatmu sedih.</p>
+            <p id="text14" class="hidden-text">Terima kasih ya, sudah begitu sabar. Terima kasih sudah bertahan denganku sampai sejauh ini...</p>
+            <p id="text15" class="hidden-text">Terima kasih telah bersedia melintasi rintangan bersamaku, melunakkan egomu untukku...</p>
+            <p id="text16" class="hidden-text">Dan tetap menggenggam tanganku bahkan di saat dunia sedang tidak baik-baik saja.</p>
+            <p id="text17" class="hidden-text">Aku sangat bersyukur memilikimu. Aku sayang banget sama kamu, lebih dari yang kamu tahu.</p>
+            <p id="text18" class="hidden-text">Dulu, sekarang, dan semoga untuk seterusnya...</p>
+            <p id="text19" class="hidden-text highlight" style="margin-bottom: 20px;">Happy 575 days with you ❤️</p>
+            <p id="text20" class="hidden-text highlight" style="font-size: 3rem; margin-top: 0;">I love you so much.</p>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="bgMusic" loop>
+        <source src="assets/Christina Perri - A Thousand Years (Lyrics) - 7clouds.mp3" type="audio/mpeg">
+        <source src="assets/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
