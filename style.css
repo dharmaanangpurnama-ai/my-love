@@ -364,3 +364,38 @@ button:hover {
     transition: width 0.3s ease;
     border-radius: 10px;
 }
+
+/* Responsive adjustments for Mobile */
+@media (max-width: 768px) {
+    .hidden-text {
+        font-size: 1.25rem;
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+
+    .highlight {
+        font-size: 2.5rem;
+    }
+
+    .glass-card h1 {
+        font-size: 3rem;
+    }
+    
+    .glass-card p {
+        font-size: 1rem;
+    }
+
+    .photo-container {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .message-container {
+        height: 180px;
+        width: 95%;
+    }
+    
+    .story-media {
+        max-height: 35vh; /* slightly smaller on mobile to leave more room for text */
+    }
+}
